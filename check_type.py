@@ -1,6 +1,10 @@
 import requests
 
-response = requests.post("https://playground.learnqa.ru/api/check_type", params={"param1": "value1"})
+param = {"param1": "value1"}
+url = "https://playground.learnqa.ru/api/check_type"
+
+response = requests.get(url, data=param)
+
 print(response.text)
 
 # При использовании метода отличного от GET, при использовании params, все равно приходит ответ с указанными параметрами,
