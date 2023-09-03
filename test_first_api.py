@@ -1,10 +1,11 @@
 import requests
 
+
 class TestFirstApi:
     def test_hello_call(self):
         url = "https://playground.learnqa.ru/api/hello"
         name = "Mike"
-        data = {'name':name}
+        data = {'name': name}
 
         response = requests.get(url, params=data)
 
